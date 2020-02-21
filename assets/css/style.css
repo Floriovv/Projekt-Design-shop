@@ -1,0 +1,153 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla';
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  text-transform: none;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar{
+  height: 50px;
+  margin-bottom: 25px;
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-top: 25px;
+}
+
+.title{
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.headerUlist, .headerlist{
+  display: inline-block;
+  padding: 10px;
+}
+
+.headerUlist{
+  margin-left: 55%;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+}
+
+.highlightproduct{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mainimg{
+  max-height: 550px;
+  width: 75vw;
+}
+
+p{
+  margin-top: 0;
+}
+
+.mainimgdescription{
+  max-height: 25px;
+  align-self: flex-start;
+  margin-left: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75vw;
+}
+
+.author{
+  color: #848484;
+  justify-self: flex-end;
+  margin-left: 180px;
+}
+
+.shade{
+  position: absolute;
+  height: 300px;
+  width: 200px;
+  background-color: red;
+  top: -20px;
+  /* top: 300px;
+  left: 400px; */
+
+}
+
+.gallerie{
+  position: relative;
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: 345px 345px 345px;
+  grid-template-rows: 450px 450px;
+  grid-gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.gallerieimg{
+  height: 450px;
+  width: 345px;
+}
+
+.erstesbild{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+img:hover{
+  opacity: .5;
+  transition: opacity 1s;
+  /* animation-name: cover;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; */
+  background: #000;
+  /* display: inline-block; */
+}
+
+@keyframes cover{
+  from {top: 300px;}
+  to {top: 40px;}
+}
+
+.zweitesbild{
+  grid-column: 2/3;
+  grid-row: 1/1;
+}
+
+.drittesbild{
+  grid-column: 3/-1;
+  grid-row: 1/1;
+}
+
+.viertesbild{
+  grid-column: 1/2;
+  grid-row: 2/-1;
+}
+
+.fünftesbild{
+  grid-column: 2/3;
+  grid-row: 2/-1;
+}
+
+.sechtesbild{
+  grid-column: 3/-1;
+  grid-row: 2/-1;
+}
+
